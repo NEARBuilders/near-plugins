@@ -3,18 +3,20 @@
 Cross-chain token swaps via the 1Click API for Claude Code.
 
 ## Install
+
 ```bash
 # Local development
 claude --plugin-dir ./near-intents-plugin
 
 # From marketplace
-/plugin marketplace add SurgeCode/near-intents-plugin
-/plugin install near-intents@SurgeCode
+/plugin marketplace add NEARBuilders/near-intents-plugin
+/plugin install near-intents@near-plugins
 ```
 
 ## Usage
 
 Claude automatically uses this skill when building swap widgets, bridge interfaces, or multi-chain transfers.
+
 ```
 "Build a React swap widget using NEAR Intents"
 "Create a cross-chain bridge from Ethereum to NEAR"
@@ -22,10 +24,12 @@ Claude automatically uses this skill when building swap widgets, bridge interfac
 ```
 
 ## Structure
+
 ```
 near-intents-plugin/
 ├── .claude-plugin/
-│   └── plugin.json
+│   ├── plugin.json
+│   └── marketplace.json
 ├── skills/
 │   └── near-intents/
 │       ├── SKILL.md          # Index - start here
@@ -43,6 +47,8 @@ near-intents-plugin/
 - [API Keys](https://partners.near-intents.org/)
 - [OpenAPI Spec](https://1click.chaindefuser.com/docs/v0/openapi.yaml)
 
-## Contributors
+## Credits
 
-`near-intents` [skill](https://github.com/SurgeCode/near-intents-skill) by SurgeCode converted to plugin by NEAR builders
+`near-intents` [skill](https://github.com/SurgeCode/near-intents-skill) by SurgeCode
+
+More info: https://skills.sh/surgecode/near-intents-skill/near-intents
