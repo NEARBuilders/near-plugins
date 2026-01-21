@@ -2,56 +2,46 @@
 
 Claude Code plugins for building on NEAR.
 
-## Install
+## Quick Start
 
-```bash
+```
 /plugin marketplace add NEARBuilders/near-plugins
 /plugin install near-intents@near-plugins
 ```
 
-## Plugins
+Then restart Claude Code.
 
-### near-intents
+### Example Prompts (NEAR Intents Plugin)
 
-Cross-chain token swaps via the 1Click API.
+- "Build a React swap widget using NEAR Intents"
+- "Create a cross-chain bridge from Ethereum to NEAR"
+- "Implement a token swap server using the 1Click API"
 
-Claude automatically uses this skill when building swap widgets, bridge interfaces, or multi-chain transfers.
+## Available Plugins
 
-```
-"Build a React swap widget using NEAR Intents"
-"Create a cross-chain bridge from Ethereum to NEAR"
-"Implement a token swap server using the 1Click API"
-```
+| Plugin                                        | Description                      | Install                                     |
+| --------------------------------------------- | -------------------------------- | ------------------------------------------- |
+| [near-intents](./plugins/near-intents-plugin) | Cross-chain swaps via 1Click API | `/plugin install near-intents@near-plugins` |
 
-## Structure
+### Soon
 
-```
-near-plugins/
-├── .claude-plugin/
-│   └── marketplace.json
-├── plugins/
-│   └── near-intents-plugin/
-│       ├── .claude-plugin/
-│       │   └── plugin.json
-│       └── skills/
-│           └── near-intents/
-│               ├── SKILL.md
-│               ├── AGENTS.md
-│               └── rules/
-│                   ├── api-*.md
-│                   ├── deposit-*.md
-│                   └── react-*.md
-└── README.md
-```
+- `near-ai`
+- `near-social`
+- `near-kit`
+
+Create an issue [here](https://github.com/NEARBuilders/near-plugins/issues) to request a plugin.
+
+## Contributing
+
+To add a plugin:
+
+1. Fork or clone this repo: https://github.com/NEARBuilders/near-plugins.git
+2. Create `plugins/your-plugin/` with `.claude-plugin/plugin.json`
+3. Add skills in `plugins/your-plugin/skills/`
+4. Add entry to `.claude-plugin/marketplace.json`
+5. Submit pull request
 
 ## Resources
 
-- [NEAR Intents Docs](https://docs.near-intents.org/near-intents/integration/distribution-channels/1click-api)
-- [API Keys](https://partners.near-intents.org/)
-- [OpenAPI Spec](https://1click.chaindefuser.com/docs/v0/openapi.yaml)
-
-## Credits
-
-[`near-intents-skill`](https://github.com/SurgeCode/near-intents-skill) by SurgeCode
-
-> more info via [skills.sh](https://skills.sh/surgecode/near-intents-skill/near-intents)
+- [NEAR Protocol Docs](https://docs.near.org)
+- [Claude Code Plugins](https://docs.anthropic.com/claude-code/plugins)
