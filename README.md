@@ -1,19 +1,19 @@
-# NEAR Intents Plugin
+# NEAR Plugins
 
-Cross-chain token swaps via the 1Click API for Claude Code.
+Claude Code plugins for building on NEAR.
 
 ## Install
 
 ```bash
-# Local development
-claude --plugin-dir ./near-intents-plugin
-
-# From marketplace
-/plugin marketplace add NEARBuilders/near-intents-plugin
+/plugin marketplace add NEARBuilders/near-plugins
 /plugin install near-intents@near-plugins
 ```
 
-## Usage
+## Plugins
+
+### near-intents
+
+Cross-chain token swaps via the 1Click API.
 
 Claude automatically uses this skill when building swap widgets, bridge interfaces, or multi-chain transfers.
 
@@ -26,24 +26,27 @@ Claude automatically uses this skill when building swap widgets, bridge interfac
 ## Structure
 
 ```
-near-intents-plugin/
+near-plugins/
 ├── .claude-plugin/
-│   ├── plugin.json
 │   └── marketplace.json
-├── skills/
-│   └── near-intents/
-│       ├── SKILL.md          # Index - start here
-│       ├── AGENTS.md         # Full compiled rules
-│       └── rules/
-│           ├── api-*.md      # API endpoints
-│           ├── deposit-*.md  # Chain deposits
-│           └── react-*.md    # React patterns
+├── plugins/
+│   └── near-intents-plugin/
+│       ├── .claude-plugin/
+│       │   └── plugin.json
+│       └── skills/
+│           └── near-intents/
+│               ├── SKILL.md
+│               ├── AGENTS.md
+│               └── rules/
+│                   ├── api-*.md
+│                   ├── deposit-*.md
+│                   └── react-*.md
 └── README.md
 ```
 
 ## Resources
 
-- [Official Docs](https://docs.near-intents.org/near-intents/integration/distribution-channels/1click-api)
+- [NEAR Intents Docs](https://docs.near-intents.org/near-intents/integration/distribution-channels/1click-api)
 - [API Keys](https://partners.near-intents.org/)
 - [OpenAPI Spec](https://1click.chaindefuser.com/docs/v0/openapi.yaml)
 
