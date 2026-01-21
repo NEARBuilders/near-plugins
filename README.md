@@ -49,6 +49,6 @@ near-intents-plugin/
 
 ## Credits
 
-`near-intents` [skill](https://github.com/SurgeCode/near-intents-skill) by SurgeCode
+[`near-intents-skill`](https://github.com/SurgeCode/near-intents-skill) by SurgeCode
 
-More info: https://skills.sh/surgecode/near-intents-skill/near-intents
+> more info via [skills.sh](https://skills.sh/surgecode/near-intents-skill/near-intents)

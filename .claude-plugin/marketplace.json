@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "near-intents",
-      "source": ".",
+      "source": "./",
       "description": "Cross-chain swap integration using the NEAR Intents 1Click API. Covers API endpoints, chain-specific deposit transactions for EVM/Solana/NEAR/TON/Stellar/Tron, TypeScript patterns, and React hooks.",
       "version": "1.0.0",
       "author": {
