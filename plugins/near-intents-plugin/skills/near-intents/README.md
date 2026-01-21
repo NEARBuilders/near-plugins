@@ -1,6 +1,6 @@
-# near-intents plugin
+# NEAR Intents Plugin
 
-Cross-chain token swaps via the NEAR Intents 1Click API.
+Enable cross-chain token swaps via the [NEAR Intents](https://near-intents.org).
 
 ## Install
 
@@ -13,7 +13,7 @@ Restart Claude Code after installing.
 
 ## What It Does
 
-This skill teaches Claude Code how to build with the 1Click API:
+This skill teaches Claude Code how to build with the [1Click Swap API](https://docs.near-intents.org/near-intents/integration/distribution-channels/1click-api):
 
 - React swap widgets with wagmi
 - Server-side swap scripts with viem
@@ -23,9 +23,9 @@ This skill teaches Claude Code how to build with the 1Click API:
 ## Example Prompts
 
 ```
-"Build a React swap widget using NEAR Intents"
-"Create a Node.js script to swap USDC to wNEAR"
-"Add cross-chain bridging from Ethereum to NEAR"
+Build a React swap widget using NEAR Intents
+Create a cross-chain bridge from Ethereum to NEAR
+Implement a token swap server using the 1Click API
 ```
 
 ## Integration Flow
@@ -49,12 +49,12 @@ skills/near-intents/
 
 ## Resources
 
-- [1Click API Docs](https://docs.near-intents.org/near-intents/integration/distribution-channels/1click-api)
-- [API Keys](https://partners.near-intents.org/)
+- [NEAR Intents Docs](https://docs.near-intents.org)
+- [API Keys](https://partners.near-intents.org)
 - [OpenAPI Spec](https://1click.chaindefuser.com/docs/v0/openapi.yaml)
 
 ## Credits
 
-Based on [near-intents-skill](https://github.com/SurgeCode/near-intents-skill) by [SurgeCode](https://github.com/SurgeCode)
+[near-intents-skill](https://github.com/SurgeCode/near-intents-skill) by [Surge](https://x.com/surgecodes)
 
 > More info via [skills.sh](https://skills.sh/surgecode/near-intents-skill/near-intents)

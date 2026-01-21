@@ -13,9 +13,11 @@ Then restart Claude Code.
 
 ### Example Prompts (NEAR Intents Plugin)
 
-- "Build a React swap widget using NEAR Intents"
-- "Create a cross-chain bridge from Ethereum to NEAR"
-- "Implement a token swap server using the 1Click API"
+```
+Build a React swap widget using NEAR Intents
+Create a cross-chain bridge from Ethereum to NEAR
+Implement a token swap server using the 1Click API
+```
 
 ## Available Plugins
 
@@ -25,11 +27,11 @@ Then restart Claude Code.
 
 ### Soon
 
-- `near-ai`
-- `near-social`
-- `near-kit`
+- `near-ai` — NEAR AI Cloud
+- `near-social` — Graph Database
+- `near-kit` — Developer Tools
 
-Create an issue [here](https://github.com/NEARBuilders/near-plugins/issues) to request a plugin.
+Other ideas? Create an issue [here](https://github.com/NEARBuilders/near-plugins/issues) to request a plugin.
 
 ## Contributing
 
